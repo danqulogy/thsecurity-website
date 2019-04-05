@@ -54,10 +54,7 @@
                     <div class="about-desc">
                         <div class="sec-title">
                             <h1><span>About </span>THSecurity Company</h1>
-                            <p>If you are looking for a great shipping company then look no further than
-                                THSecurity Services. We are the leading shipping and transport and package tracking
-                                solutions company. Whether shipping to the USA or shipping from the USA we will provide
-                                shipping solutions and the ability to track your packages.
+                            <p>If you are looking for a great shipping company then look no further than THSecurity Services. We are the                                    leading shipping and transport and package tracking solutions company. Whether shipping to the Europe,                                      America and Asian countries we will provide shipping solutions and the ability to track your packages.
                             </p>
                             <p>
                                 For all your importing and

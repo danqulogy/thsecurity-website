@@ -16,7 +16,7 @@
             </div>
             <div class="row">
                 <div class="service2-item">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="service2-inner">
                             <div class="media">
                                 <div class="media-left">
@@ -34,7 +34,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>																																	<div class="col-md-4 col-sm-6">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
                         <div class="service2-inner">
                             <div class="media">
                                 <div class="media-left">
@@ -55,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-6 col-sm-6">
                         <div class="service2-inner">
                             <div class="media">
                                 <div class="media-left">
@@ -65,10 +67,30 @@
                                 </div>
                                 <div class="media-body">
                                     <div class="service2-details">
-                                        <h2><a href="service-details.html">Inland Haulage</a></h2>
+                                        <h2><a>Inland Haulage</a></h2>
                                         <p>
                                             Inland haulage includes trucking of containers from door to the port of shipment
                                             and from port to door/stripping point. We ensure that the transportation is secure.
+                                            <br/><br/><br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="service2-inner">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="service2-icon">
+                                        <img src="{{asset('img/icon/resort.png')}}" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="service2-details">
+                                        <h2><a>Safe Keeping</a></h2>
+                                        <p>
+                                            THSecurity company protects valuable assets such as Money, Gold, Diamond and Valuable documents. We use our security devices and other sophisticated machines to protect items of our clients. Due to protecive intelligence we protect individuals and many companies assets in Ghana and beyond.
                                         </p>
                                     </div>
                                 </div>
