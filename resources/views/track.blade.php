@@ -90,6 +90,7 @@
                     <div class="col-md-offset-1 col-md-10">
                         <div class="about-desc">
                             <div class="sec-title">
+                                <br>
                                 <h2><span>Package Details for </span>Vault No. {{session('asset')->vault_number}}</h2>
                                 <hr>
                                 <div class="row">
@@ -135,6 +136,62 @@
                                         </div>
                                     </div>
                                     @endif
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <br>
+                                        <h2><span class="fa fa-cubes"></span> <span> Movement History </span></h2>
+                                        <hr>
+                                        <style>
+                                            th,td{
+                                                padding-top: 10px;
+                                                padding-bottom: 10px;
+                                            }
+                                        </style>
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="thead-light" style="color: orangered; font-size: 1.3rem">
+                                            <tr>
+                                                <th class="" scope="col">History</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Destination</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">Pick up</th>
+                                                <td class="text-primary">5th March, 2019 5:34PM</td>
+                                                <td>GHANA</td>
+                                                <td class="text-success">Picked up by shipping partner</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">In Transit</th>
+                                                <td class="text-primary">6th March, 2019 9:20PM</td>
+                                                <td>EGYPT</td>
+                                                <td class="text-success">Arrival at Terminal</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">In Transit</th>
+                                                <td class="text-primary">8th March, 2019 7:00PM</td>
+                                                <td>EGYPT</td>
+                                                <td class="text-success">Moved from Terminal</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">In Transit</th>
+                                                <td class="text-primary">9th March, 2019 10:00PM</td>
+                                                <td>DUBAI</td>
+                                                <td class="text-success">Arrival at Terminal</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">In Transit</th>
+                                                <td class="text-primary">12th March, 2019 7:00AM</td>
+                                                <td>DUBAI</td>
+                                                <td class="text-success">Hold by Customs</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
 
