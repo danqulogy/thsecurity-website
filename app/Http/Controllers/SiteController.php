@@ -39,14 +39,16 @@ class SiteController extends Controller
 
     public function postFindPackage(Request $request){
 
-        $assets = Asset::where('vault_number', $request->get('vault_number'))->get();
+        $assets = Asset::with('movements')
+                  ->where('vault_number', $request->get('vault_number'))->first();
         if (count($assets)==0){
             return redirect('/track-package')->with('error', 'No matching package found. Please enter a correct vault number for your package.');
         }
 
+//        return $assets;
             return redirect('/track-package')
                 ->with('success', true)
-                ->with('asset', $assets[0]);
+                ->with('asset', $assets);
 
     }
 

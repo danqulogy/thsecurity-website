@@ -18,4 +18,8 @@ class Asset extends Model
         'amount',
         'vault_number'
     ];
+
+    public function movements(){
+        return $this->hasMany(MovementHistory::class);
+    }
 }

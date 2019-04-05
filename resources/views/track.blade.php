@@ -138,7 +138,9 @@
                                     @endif
                                 </div>
                                 <div class="row">
+
                                     <div class="col-md-12">
+                                        @if(session('asset')->has('movements') && count(session('asset')->movements) > 0)
                                         <br>
                                         <h2><span class="fa fa-cubes"></span> <span> Movement History </span></h2>
                                         <hr>
@@ -149,49 +151,35 @@
                                             }
                                         </style>
                                         <table class="table table-striped table-bordered">
-                                            <thead class="thead-light" style="color: orangered; font-size: 1.3rem">
+                                            <thead class="thead-light" style="color: #ffba27; font-size: 1.3rem">
+
                                             <tr>
                                                 <th class="" scope="col">History</th>
                                                 <th scope="col">Date</th>
                                                 <th scope="col">Destination</th>
                                                 <th scope="col">Status</th>
                                             </tr>
+
                                             </thead>
                                             <tbody>
+
+                                            @foreach(session('asset')->movements as $m)
                                             <tr>
-                                                <th scope="row">Pick up</th>
-                                                <td class="text-primary">5th March, 2019 5:34PM</td>
-                                                <td>GHANA</td>
-                                                <td class="text-success">Picked up by shipping partner</td>
+                                                <th scope="row">{{$m->action}}</th>
+                                                <td class="text-primary">{{$m->date}}</td>
+                                                <td>{{$m->destination}}</td>
+                                                <td class="text-success">{{$m->status}}</td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">In Transit</th>
-                                                <td class="text-primary">6th March, 2019 9:20PM</td>
-                                                <td>EGYPT</td>
-                                                <td class="text-success">Arrival at Terminal</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">In Transit</th>
-                                                <td class="text-primary">8th March, 2019 7:00PM</td>
-                                                <td>EGYPT</td>
-                                                <td class="text-success">Moved from Terminal</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">In Transit</th>
-                                                <td class="text-primary">9th March, 2019 10:00PM</td>
-                                                <td>DUBAI</td>
-                                                <td class="text-success">Arrival at Terminal</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">In Transit</th>
-                                                <td class="text-primary">12th March, 2019 7:00AM</td>
-                                                <td>DUBAI</td>
-                                                <td class="text-success">Hold by Customs</td>
-                                            </tr>
+                                            @endforeach
+
 
                                             </tbody>
                                         </table>
+
+                                        @endif
+
                                     </div>
+
                                 </div>
                             </div>
 
