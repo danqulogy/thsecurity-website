@@ -142,7 +142,7 @@
                                     <div class="col-md-12">
                                         @if(session('asset')->has('movements') && count(session('asset')->movements) > 0)
                                         <br>
-                                        <h2><span class="fa fa-cubes"></span> <span> Movement History </span></h2>
+                                            <h2><span class="fa fa-cubes"></span> <span> Shipping History </span></h2>
                                         <hr>
                                         <style>
                                             th,td{
